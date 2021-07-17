@@ -26,6 +26,11 @@ public class HomepageActivity extends AppCompatActivity {
     startActivity(intent);
   }
 
+  public void scanQrCode(View view) {
+    Intent intent = new Intent(this, QrScannerActivity.class);
+    startActivity(intent);
+  }
+
   private void setBanners() {
     List<Banner> banners = api.getHomepageBanners();
 //    ToDo set banners to the view

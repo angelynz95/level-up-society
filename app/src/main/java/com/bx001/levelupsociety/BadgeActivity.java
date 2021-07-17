@@ -10,8 +10,5 @@ public class BadgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_badge);
-
-        TextView textView = findViewById(R.id.textView3);
-        textView.setText("temp");
     }
 }
