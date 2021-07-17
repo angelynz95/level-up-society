@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LevelUpSociety">
-        <activity android:name=".DisplayMessageActivity"
-            android:parentActivityName=".Homepage">
+        <activity android:name=".BadgeActivity"
+            android:parentActivityName=".HomepageActivity">
         </activity>
-        <activity android:name=".Homepage">
+        <activity android:name=".HomepageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
