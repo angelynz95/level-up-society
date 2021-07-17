@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LevelUpSociety">
         <activity android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Homepage">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
