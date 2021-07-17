@@ -6,6 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".HomepageActivity">
 
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="wrap_content"
+        android:layout_height="261dp"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="wrap_content"
+        android:layout_height="205.25dp"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/rectangle_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="wrap_content"
+        android:layout_height="154.04dp"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/rectangle_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="125.43dp"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
