@@ -42,10 +42,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/logo_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@mipmap/logo_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/growcherish"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginStart="82dp"
         android:fontFamily="@font/didact_gothic"
         android:gravity="center_vertical"
@@ -188,5 +201,22 @@
         app:layout_constraintBottom_toBottomOf="@id/ellipse_6"
         app:layout_constraintEnd_toEndOf="@+id/ellipse_6"
         app:layout_constraintStart_toStartOf="@+id/ellipse_6" />
+
+    <HorizontalScrollView
+        android:id="@+id/banners"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_rec">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner_1"
+            android:layout_gravity="center"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
 
 </android.support.constraint.ConstraintLayout>
