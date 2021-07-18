@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Growcherish</string>
     <string name="add_to_trolley">Add to Trolley</string>
+    <string name="pay">Pay at Cashier</string>
     <string name="scan">Scan</string>
-    <string name="view_badges">View Badges</string>
+    <string name="total">Total</string>
     <string name="trolley">Trolley</string>
+    <string name="view_badges">View Badges</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>

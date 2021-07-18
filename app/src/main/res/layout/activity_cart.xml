@@ -39,4 +39,118 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_close_dark" />
 
+    <ImageView
+        android:id="@+id/grocery_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1"
+        app:srcCompat="@drawable/grocery_pak_choi" />
+
+    <TextView
+        android:id="@+id/grocery_name"
+        android:layout_width="139dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:text="Pak Choi 250g"
+        android:textAppearance="@style/grocery_name"
+        app:layout_constraintStart_toEndOf="@id/grocery_image"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_4_1" />
+
+    <TextView
+        android:id="@+id/grocery_weight"
+        android:layout_width="150dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:text="£5.20/kg"
+        android:textAppearance="@style/grocery_weight"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_name"
+        app:layout_constraintStart_toEndOf="@id/grocery_image" />
+
+    <TextView
+        android:id="@+id/grocery_price"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£ 1.30"
+        android:textAppearance="@style/grocery_price"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_discount"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£ 1.04"
+        android:textAppearance="@style/grocery_discount"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_price"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="144dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="bottom"
+        android:text="Grazers' Week 20% Off"
+        android:textAppearance="@style/grocery_promo"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_4_1"
+        app:layout_constraintStart_toEndOf="@id/grocery_image" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:text="@string/total"
+        android:textAppearance="@style/grocery_price"
+        app:layout_constraintBottom_toTopOf="@+id/pay"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_total"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£ 1.30"
+        android:textAppearance="@style/grocery_price"
+        app:layout_constraintBottom_toTopOf="@+id/pay"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:onClick="pay"
+        android:text="@string/pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
