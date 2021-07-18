@@ -11,4 +11,5 @@
     <color name="dark_green_40">#66377D00</color>
     <color name="dark_moderate_green">#5E9532</color>
     <color name="light_grayish_green">#D2DFC8</color>
+    <color name="very_dark_green">#1F4600</color>
 </resources>

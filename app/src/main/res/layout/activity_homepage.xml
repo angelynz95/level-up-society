@@ -8,9 +8,8 @@
 
     <View
         android:id="@+id/rectangle_4"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="261dp"
-        android:layout_marginTop="-24dp"
         android:background="@drawable/rectangle_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,9 +17,8 @@
 
     <View
         android:id="@+id/rectangle_5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="205.25dp"
-        android:layout_marginTop="-24dp"
         android:background="@drawable/rectangle_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,9 +26,8 @@
 
     <View
         android:id="@+id/rectangle_7"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="154.04dp"
-        android:layout_marginTop="-24dp"
         android:background="@drawable/rectangle_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,13 +35,86 @@
 
     <View
         android:id="@+id/rectangle_3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="125.43dp"
-        android:layout_marginTop="-24dp"
         android:background="@drawable/rectangle_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/growcherish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:fontFamily="@font/didact_gothic"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textAppearance="@style/growcherish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rounded_rec"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/rounded_rec"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/line_4"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_rec"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_rec"
+        app:layout_constraintStart_toStartOf="@+id/rounded_rec"
+        app:layout_constraintTop_toTopOf="@+id/rounded_rec" />
+
+    <RelativeLayout
+        android:id="@+id/badge_butto"
+        android:layout_width="124dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="6dp"
+        android:onClick="getBadges"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_rec"
+        app:layout_constraintTop_toTopOf="@+id/rounded_rec">
+
+        <TextView
+            android:id="@+id/view_badges"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/assistant"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/view_badges"
+            android:textAppearance="@style/view_badges" />
+
+        <View
+            android:id="@+id/vector"
+            android:layout_width="10.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@id/view_badges"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginEnd="7.5dp"
+            android:layout_marginBottom="4.5dp"
+            android:background="@drawable/vector" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button"
@@ -57,4 +127,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
