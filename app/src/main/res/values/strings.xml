@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Growcherish</string>
     <string name="add_to_trolley">Add to Trolley</string>
+    <string name="badges">Badges</string>
     <string name="congrats">Congrats! You are now a:</string>
     <string name="pay">Pay at Cashier</string>
     <string name="scan">Scan</string>
