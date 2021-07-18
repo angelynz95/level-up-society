@@ -116,16 +116,77 @@
             android:background="@drawable/vector" />
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+    <View
+        android:id="@+id/ellipse_6"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ellipse_6"
+        android:elevation="6dp"
         android:onClick="scanQrCode"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_rec"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_rec"
+        app:layout_constraintStart_toStartOf="@+id/rounded_rec" />
+
+    <View
+        android:id="@+id/vector_6"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/vector_6"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_6"
+        app:layout_constraintTop_toTopOf="@id/ellipse_6" />
+
+    <View
+        android:id="@+id/vector_5"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/vector_5"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_6"
+        app:layout_constraintTop_toTopOf="@id/ellipse_6" />
+
+    <View
+        android:id="@+id/vector_4"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/vector_4"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_6"
+        app:layout_constraintTop_toTopOf="@id/ellipse_6" />
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="11dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_horizontal|top"
+        android:text="@string/scan"
+        android:textAppearance="@style/scan"
+        app:layout_constraintBottom_toBottomOf="@id/ellipse_6"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_6" />
 
 </android.support.constraint.ConstraintLayout>

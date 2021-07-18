@@ -43,7 +43,7 @@ public class QrScannerActivity extends AppCompatActivity {
   }
 
   private void initQrScanner() {
-    Toast.makeText(getApplicationContext(), "QR scanner started", Toast.LENGTH_SHORT).show();
+    Toast.makeText(getApplicationContext(), "Scan a Growcherish QR code", Toast.LENGTH_SHORT).show();
     barcodeDetector = new BarcodeDetector.Builder(this)
             .setBarcodeFormats(Barcode.ALL_FORMATS)
             .build();
@@ -81,7 +81,6 @@ public class QrScannerActivity extends AppCompatActivity {
     barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
       @Override
       public void release() {
-        Toast.makeText(getApplicationContext(), "To prevent memory leaks QR scanner has been stopped", Toast.LENGTH_SHORT).show();
       }
 
       @Override
