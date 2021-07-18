@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BadgeActivity">
+    tools:context=".BadgeDetailActivity">
 
     <View
         android:id="@+id/rectangle_4_1"
@@ -40,31 +40,13 @@
         app:srcCompat="@drawable/icon_close_dark" />
 
     <ImageView
-        android:id="@+id/badges_image"
+        android:id="@+id/badge_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1"
-        app:srcCompat="@drawable/page_badges_locked" />
-
-    <View
-        android:id="@+id/view_progression_map"
-        android:layout_width="0dp"
-        android:layout_height="107dp"
-        android:onClick="viewProgressionMap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1" />
-
-    <View
-        android:id="@+id/get_badge"
-        android:layout_width="156dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="217dp"
-        android:onClick="getBadge"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1" />
+        app:srcCompat="@drawable/page_graze_locked" />
 
 </android.support.constraint.ConstraintLayout>

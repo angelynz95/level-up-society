@@ -134,7 +134,7 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/assistant"
         android:gravity="center_vertical|end"
-        android:text="£ 1.30"
+        android:text="£ 1.04"
         android:textAppearance="@style/grocery_price"
         app:layout_constraintBottom_toTopOf="@+id/pay"
         app:layout_constraintEnd_toEndOf="parent" />

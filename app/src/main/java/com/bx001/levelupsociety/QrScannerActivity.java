@@ -25,12 +25,15 @@ public class QrScannerActivity extends AppCompatActivity {
   private SurfaceView surfaceView;
   private BarcodeDetector barcodeDetector;
   private CameraSource cameraSource;
+  private boolean grazerBadge;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_qr_scanner);
     surfaceView = findViewById(R.id.surfaceView);
+
+    grazerBadge = getIntent().getBooleanExtra("grazerBadge", false);
   }
 
   @Override
@@ -93,6 +96,7 @@ public class QrScannerActivity extends AppCompatActivity {
           String qrCodeValue = barcodes.valueAt(0).displayValue;
           Intent intent = new Intent(QrScannerActivity.this, GroceryActivity.class);
           intent.putExtra(QR_CODE_VALUE_KEY, qrCodeValue);
+          intent.putExtra("grazerBadge", grazerBadge);
           QrScannerActivity.this.startActivity(intent);
         }
       }

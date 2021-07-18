@@ -11,13 +11,15 @@
         android:roundIcon="@mipmap/logo_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.LevelUpSociety">
-        <activity android:name=".AchievementActivity"></activity>
+        <activity android:name=".BadgeDetailActivity"></activity>
+        <activity android:name=".ProgressionMapActivity" />
+        <activity android:name=".AchievementActivity" />
         <activity
             android:name=".GroceryActivity"
-            android:parentActivityName=".QrScannerActivity"></activity>
+            android:parentActivityName=".QrScannerActivity" />
         <activity
             android:name=".CartActivity"
-            android:parentActivityName=".GroceryActivity"></activity>
+            android:parentActivityName=".GroceryActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

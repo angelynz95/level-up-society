@@ -219,4 +219,37 @@
             android:orientation="vertical" />
     </HorizontalScrollView>
 
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="106dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:elevation="6dp"
+        app:layout_constraintStart_toStartOf="@id/rounded_rec"
+        app:layout_constraintTop_toTopOf="@id/rounded_rec"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/fave"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="19dp"
+        android:elevation="6dp"
+        app:layout_constraintStart_toStartOf="@id/rounded_rec"
+        app:layout_constraintBottom_toBottomOf="@id/rounded_rec"
+        app:srcCompat="@drawable/icon_fave_text" />
+
+    <ImageView
+        android:id="@+id/trolley"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="19dp"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@id/rounded_rec"
+        app:layout_constraintBottom_toBottomOf="@id/rounded_rec"
+        app:srcCompat="@drawable/icon_trolley_text" />
+
 </android.support.constraint.ConstraintLayout>

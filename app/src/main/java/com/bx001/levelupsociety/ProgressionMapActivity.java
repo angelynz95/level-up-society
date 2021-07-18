@@ -1,21 +1,18 @@
 package com.bx001.levelupsociety;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class AchievementActivity extends AppCompatActivity {
+public class ProgressionMapActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_achievement);
+    setContentView(R.layout.activity_progression_map);
   }
 
   public void goBack(View view) {
-    Intent intent = new Intent(this, HomepageActivity.class);
-    intent.putExtra("grazerBadge", true);
-    this.startActivity(intent);
+    this.finish();
   }
 }
