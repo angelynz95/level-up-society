@@ -36,6 +36,6 @@ public class HomepageActivity extends AppCompatActivity {
 
   private void setBanners() {
     List<Banner> banners = api.getHomepageBanners();
-//    ToDo set banners to the view
+//    ToDo set banners to the view, use scrolling fragment?
   }
 }

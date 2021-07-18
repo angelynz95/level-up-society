@@ -1,7 +1,9 @@
 package com.bx001.levelupsociety;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,10 +20,11 @@ import com.google.android.gms.vision.barcode.BarcodeDetector;
 import java.io.IOException;
 
 public class QrScannerActivity extends AppCompatActivity {
+  private static final String QR_CODE_VALUE_KEY = "QR_CODE_VALUE";
+  private static final int REQUEST_CAMERA_PERMISSION = 201;
   private SurfaceView surfaceView;
   private BarcodeDetector barcodeDetector;
   private CameraSource cameraSource;
-  private static final int REQUEST_CAMERA_PERMISSION = 201;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +91,9 @@ public class QrScannerActivity extends AppCompatActivity {
         final SparseArray<Barcode> barcodes = detections.getDetectedItems();
         if (barcodes.size() != 0) {
           String qrCodeValue = barcodes.valueAt(0).displayValue;
-//          ToDo open cart
+          Intent intent = new Intent(QrScannerActivity.this, GroceryActivity.class);
+          intent.putExtra(QR_CODE_VALUE_KEY, qrCodeValue);
+          QrScannerActivity.this.startActivity(intent);
         }
       }
     });

@@ -6,4 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <View
+        android:id="@+id/rectangle_4_1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/rectangle_4_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trolley"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="65dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:text="@string/trolley"
+        android:textAppearance="@style/badges"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_close_dark"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="goBack"
+        app:layout_constraintEnd_toStartOf="@+id/trolley"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_close_dark" />
+
 </android.support.constraint.ConstraintLayout>

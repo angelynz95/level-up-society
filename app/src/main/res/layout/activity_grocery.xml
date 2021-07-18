@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroceryActivity">
+
+    <View
+        android:id="@+id/rectangle_4_1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/rectangle_4_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_close_dark"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_close_dark" />
+
+    <ImageView
+        android:id="@+id/grocery_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="330dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_trolley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grocery_pak_choi" />
+
+    <TextView
+        android:id="@+id/grocery_name"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="290dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:text="Pak Choi 250g"
+        android:textAppearance="@style/grocery_name"
+        app:layout_constraintBottom_toTopOf="@id/add_to_trolley"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_desc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="117dp"
+        android:fontFamily="@font/assistant"
+        android:text="Chinese white cabbage (Brassica rapa spp. chinensis). 13 kCal /100 gram (3 1⁄2 ounce).\n\n95% water, 2% carbohydrates, 1% protein and less than 1% fat, vit A, C , K, B6, folate, and calcium."
+        android:textAppearance="@style/grocery_desc"
+        app:layout_constraintBottom_toTopOf="@id/add_to_trolley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_name" />
+
+    <TextView
+        android:id="@+id/grocery_weight"
+        android:layout_width="150dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£5.20/kg"
+        android:textAppearance="@style/grocery_weight"
+        app:layout_constraintBottom_toTopOf="@+id/grocery_price"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_price"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£ 1.30"
+        android:textAppearance="@style/grocery_price"
+        app:layout_constraintBottom_toTopOf="@+id/grocery_discount"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_discount"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical|end"
+        android:text="£ 1.04"
+        android:textAppearance="@style/grocery_discount"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_trolley"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="bottom"
+        android:text="Grazers' Week 20% Off"
+        android:textAppearance="@style/grocery_promo"
+        app:layout_constraintBottom_toTopOf="@id/add_to_trolley"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_to_trolley"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:onClick="addToCart"
+        android:text="@string/add_to_trolley"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,15 +1,21 @@
 package com.bx001.levelupsociety;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class CartActivity extends AppCompatActivity {
+public class GroceryActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_cart);
+    setContentView(R.layout.activity_grocery);
+  }
+
+  public void addToCart(View view) {
+    Intent intent = new Intent(this, CartActivity.class);
+    this.startActivity(intent);
   }
 
   public void goBack(View view) {

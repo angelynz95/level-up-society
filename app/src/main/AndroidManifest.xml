@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/logo_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.LevelUpSociety">
+        <activity android:name=".GroceryActivity"
+            android:parentActivityName=".QrScannerActivity">
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".GroceryActivity">
+        </activity>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,13 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CartActivity" />
         <activity android:name=".QrScannerActivity" />
         <activity
             android:name=".BadgeActivity"
             android:parentActivityName=".HomepageActivity" />
-        <activity android:name=".HomepageActivity">
-        </activity>
+        <activity android:name=".HomepageActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
