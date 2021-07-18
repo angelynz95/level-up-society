@@ -6,4 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".AchievementActivity">
 
+    <View
+        android:id="@+id/rectangle_4_1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/rectangle_4_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_close_dark"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_close_dark" />
+
+    <TextView
+        android:id="@+id/congrats"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/congrats"
+        android:textAppearance="@style/badge_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4_1" />
+
+    <ImageView
+        android:id="@+id/badge_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
+        app:srcCompat="@drawable/badge_grazer" />
+
+    <TextView
+        android:id="@+id/badge_name"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Grazer"
+        android:textAppearance="@style/badge_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badge_image" />
+
+    <TextView
+        android:id="@+id/badge_quote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/assistant"
+        android:text="The best way to control cow and sheep is to give them a big grazing field.\n\n-- Shunryu Suzuki"
+        android:textAppearance="@style/badge_detail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badge_name" />
+
 </android.support.constraint.ConstraintLayout>
